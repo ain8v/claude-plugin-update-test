@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plugin update test</title>
+<style>
+  :root { --bg: #f4f1ea; --card: #ffffff; --ink: #2b2420; --muted: #6f655d; --accent: #b4532a; --line: #e2dcd2; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #1d1a17; --card: #27231f; --ink: #f1ece4; --muted: #b3a99e; --accent: #e08a5f; --line: #3a342e; } }
+  :root[data-theme="dark"] { --bg: #1d1a17; --card: #27231f; --ink: #f1ece4; --muted: #b3a99e; --accent: #e08a5f; --line: #3a342e; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 560px; margin: 0 auto; padding: 32px 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+  h1 { margin: 0 0 4px; font-size: 26px; }
+  .version { display: inline-block; margin: 8px 0 16px; padding: 4px 12px; border-radius: 999px; background: var(--accent); color: var(--card); font-weight: 600; }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1 id="hello">Hello</h1>
+    <div class="version">Version 1</div>
+    <p>This page tests whether a plugin can make an artifact and later update it in place.</p>
+    <p class="muted">When version 2 is released, ask Claude to update the test page. If this same link then shows Version 2 and still greets you by name, the update worked.</p>
+  </div>
+</main>
+<script>
+  var OWNER = '';
+  document.getElementById('hello').textContent = OWNER ? 'Hello, ' + OWNER : 'Hello';
+</script>
+</body>
+</html>
