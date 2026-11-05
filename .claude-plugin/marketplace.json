@@ -1,13 +1,14 @@
 {
   "name": "ain8v-update-test",
   "description": "Throwaway test: can a plugin skill make an artifact and later update it in place?",
-  "owner": { "name": "AI Native" },
+  "owner": {
+    "name": "AI Native"
+  },
   "plugins": [
     {
       "name": "artifact-update-test",
       "source": "./plugins/artifact-update-test",
-      "description": "Makes a small test page as an artifact, then updates that same artifact when a new version of the plugin arrives.",
-      "version": "0.2.0"
+      "description": "Makes a small test page as an artifact, then updates that same artifact when a new version of the plugin arrives."
     }
   ]
 }
