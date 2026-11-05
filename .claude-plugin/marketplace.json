@@ -7,7 +7,7 @@
       "name": "artifact-update-test",
       "source": "./plugins/artifact-update-test",
       "description": "Makes a small test page as an artifact, then updates that same artifact when a new version of the plugin arrives.",
-      "version": "0.1.0"
+      "version": "0.2.0"
     }
   ]
 }
