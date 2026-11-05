@@ -1,6 +1,5 @@
 {
   "name": "artifact-update-test",
-  "version": "0.2.1",
   "description": "Makes a small test page as an artifact, then updates that same artifact when a new version of the plugin arrives.",
   "author": {
     "name": "AI Native"
